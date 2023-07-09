@@ -1,0 +1,10 @@
+{{ define "splash.tmpl"}}
+<video autoplay muted loop id="video-splash">
+  <source src="{{ .SplashVideo }}" type="video/webm">
+</video>
+<div class="logo-overlay" id="logo-overlay">
+  <div class="name-overlay">{{ .CompanyName }}</div>
+</div>
+<style>{{template "splash.css" }}</style>
+<script>{{template "splash.js" }}</script>
+{{end}}
